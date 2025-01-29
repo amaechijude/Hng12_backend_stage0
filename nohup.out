@@ -1,0 +1,70 @@
+[29/Jan/2025 15:32:46] "GET / HTTP/1.1" 200 163
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 29, 2025 - 15:27:48
+Django version 5.1.5, using settings 'hng12_task1.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[2025-01-29 15:33:47 +0000] [7957] [INFO] Starting gunicorn 23.0.0
+[2025-01-29 15:33:47 +0000] [7957] [INFO] Listening at: http://0.0.0.0:8000 (7957)
+[2025-01-29 15:33:47 +0000] [7957] [INFO] Using worker: sync
+[2025-01-29 15:33:47 +0000] [7958] [INFO] Booting worker with pid: 7958
+[2025-01-29 15:35:09 +0000] [7957] [INFO] Handling signal: hup
+[2025-01-29 15:35:09 +0000] [7957] [INFO] Hang up: Master
+[2025-01-29 15:35:09 +0000] [7957] [ERROR] Worker (pid:7958) was sent SIGHUP!
+[2025-01-29 15:35:09 +0000] [7966] [INFO] Booting worker with pid: 7966
+[2025-01-29 15:46:58 +0000] [7957] [CRITICAL] WORKER TIMEOUT (pid:7966)
+[2025-01-29 15:46:58 +0000] [7966] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-01-29 15:46:58 +0000] [7966] [INFO] Worker exiting (pid: 7966)
+[2025-01-29 15:46:58 +0000] [8113] [INFO] Booting worker with pid: 8113
+[2025-01-29 15:49:01 +0000] [7957] [CRITICAL] WORKER TIMEOUT (pid:8113)
+[2025-01-29 15:49:01 +0000] [8113] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/amaechi/hng12/Hng12_backend_stage0/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-01-29 15:49:01 +0000] [8113] [INFO] Worker exiting (pid: 8113)
+[2025-01-29 15:49:02 +0000] [8116] [INFO] Booting worker with pid: 8116
+[2025-01-29 15:55:31 +0000] [7957] [INFO] Handling signal: term
+[2025-01-29 15:55:53 +0000] [8116] [INFO] Worker exiting (pid: 8116)
+[2025-01-29 15:55:53 +0000] [7957] [INFO] Shutting down: Master
