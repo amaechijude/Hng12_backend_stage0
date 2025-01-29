@@ -1,12 +1,13 @@
 from django.urls import path
 from django.http import JsonResponse
-from datetime import datetime, timezone
+from datetime import datetime
+import pytz
 
 def index(request):
-    utc_now = datetime.now(timezone.utc)
+    current_time = datetime.now(pytz.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     data = {
         "email": "amaechijude178@gmail.com",
-        "current_datetime": f"{utc_now.isoformat(timespec='hours')}Z".replace('+', ':'),
+        "current_datetime": current_time,
         "github_url": "https://github.com/amaechijude/Hng12_backend_stage0"
     }
     return JsonResponse(data)
