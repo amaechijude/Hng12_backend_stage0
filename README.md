@@ -25,7 +25,7 @@ https://your-deployed-api.com/
 {
   "email": "your-email@example.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/amaechijude/Hng12_backend_stage0.git"
+  "github_url": "https://github.com/amaechijude/Hng12_backend_stage0"
 }
 ```
 
@@ -33,8 +33,8 @@ https://your-deployed-api.com/
 
 ### Clone the Repositor
 ```bash
-git clone https://github.com/amaechijude/Hng12_backend_stage0.git
-cd Hng12_backend_stage0.git
+git clone https://github.com/amaechijude/Hng12_backend_stage0
+cd Hng12_backend_stage0
 ```
 
 - Ensure you have Python installed
@@ -57,3 +57,4 @@ python manage.py runserver
 ```url
 http://127.0.0.1:8000/
 ```
+You can hire experienced python developers that are verified by HNG [here](https://hng.tech/hire/python-developers) 

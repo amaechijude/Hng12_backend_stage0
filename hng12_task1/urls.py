@@ -22,7 +22,7 @@ def index(request):
  data = {
    "email": "amaechijude178@gmail.com",
    "current_datetime": f"{datetime.now(timezone.utc).isoformat()}",
-   "github_url": " https://github.com/amaechijude/Hng12_backend_stage0.git"
+   "github_url": " https://github.com/amaechijude/Hng12_backend_stage0"
  }
  return JsonResponse(data)
 
