@@ -25,17 +25,18 @@ https://your-deployed-api.com/
 {
   "email": "your-email@example.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/yourusername/your-repo"
+  "github_url": "https://github.com/amaechijude/Hng12_backend_stage0.git"
 }
+```
 
 ## Running Locall
 
 ### Clone the Repositor
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
-
+git clone https://github.com/amaechijude/Hng12_backend_stage0.git
+cd Hng12_backend_stage0.git
 ```
+
 - Ensure you have Python installed
 - Activate a virtual environment with uv
 
@@ -51,4 +52,8 @@ uv pip sync requirements.txt
 ### Run developement Server
 ```bash
 python manage.py runserver
+```
+## Visit the development Server
+```url
+http://127.0.0.1:8000/
 ```

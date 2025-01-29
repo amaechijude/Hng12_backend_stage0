@@ -14,24 +14,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
 from django.http import JsonResponse
-from datetime import datetime
 from datetime import datetime, timezone
-
-current_datetime = datetime.now(timezone.utc).isoformat()
-print(current_datetime)
 
 def index(request):
  data = {
    "email": "amaechijude178@gmail.com",
    "current_datetime": f"{datetime.now(timezone.utc).isoformat()}",
-   "github_url": "https://github.com/amaechijude/hng12_task1>"
+   "github_url": " https://github.com/amaechijude/Hng12_backend_stage0.git"
  }
  return JsonResponse(data)
 
-urlpatterns = [
-        path('', index),
-        path('admin', admin.site.urls)
-        ]
+urlpatterns = [path('', index),]
