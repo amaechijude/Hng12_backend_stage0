@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
 ROOT_URLCONF = 'hng12_task1.urls'
 
 TEMPLATES = [
