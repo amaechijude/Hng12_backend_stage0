@@ -57,4 +57,4 @@ python manage.py runserver
 ```url
 http://127.0.0.1:8000/
 ```
-You can hire experienced python developers that are verified by HNG [here](https://hng.tech/hire/python-developers) 
+## Hire experienced python developers that are verified by HNG [here](https://hng.tech/hire/python-developers) 
